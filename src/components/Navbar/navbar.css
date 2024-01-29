@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+}
+
+.navbar__item, .navbar__item--active {
+    margin-left: 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar__item--active {
+    color: rgb(86, 86, 86);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 695px) {
+    .navbar {
+        display: none;
+    }
+}

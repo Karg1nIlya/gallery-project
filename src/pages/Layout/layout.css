@@ -1,0 +1,20 @@
+.layout {
+    width: 100%;
+}
+
+.layout__container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+    .layout__container {
+        width: 695px;
+    }
+}
+
+@media (max-width: 695px) {
+    .layout__container {
+        width: auto;
+    }
+}

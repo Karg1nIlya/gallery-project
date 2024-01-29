@@ -1,0 +1,24 @@
+.main-page {
+    width: 100%;
+}
+
+/* .main-page__container {
+    width: 1400px;
+    margin: 0 auto;
+} */
+
+.main-page__list {
+    margin-top: 10px;
+}
+
+/* @media (max-width: 1400px) {
+    .main-page__container {
+        width: 695px;
+    }
+}
+
+@media (max-width: 695px) {
+    .main-page__container {
+        width: auto;
+    }
+} */

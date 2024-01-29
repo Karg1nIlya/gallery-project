@@ -1,0 +1,11 @@
+.about-page {
+    width: 100%;
+}
+
+.about-page__title {
+    padding: 40px 0;
+}
+
+.about-page__content {
+    font-size: 20px;
+}

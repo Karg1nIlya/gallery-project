@@ -1,0 +1,117 @@
+.photo-view-modal {
+    width: auto;
+    height: auto;
+    min-width: 700px;
+    max-height: 80vh;
+    padding: 30px;
+    background-color: rgb(135, 135, 135);
+    position: relative;
+    border-radius: 10px;
+}
+
+.photo-view-modal__close-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 170, 11);
+    font-size: 22px;
+    right: 12px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.photo-view-modal__img-wrapper {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-view-modal__img-wrapper--big {
+    max-width: 100%;
+    max-height: 70vh;
+    border: none;
+    overflow: auto;
+}
+
+.photo-view-modal__img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: zoom-in;
+}
+
+.photo-view-modal__img--big {
+    width: 150%;
+    cursor: zoom-out;
+}
+
+.photo-view-modal__prev-btn, .photo-view-modal__next-btn {
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    height: calc(100% - 60px);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+}
+
+.photo-view-modal__next-btn {
+    right: 30px;
+}
+
+.photo-view-modal__prev-btn:hover > .photo-view-modal__vector-left {
+    opacity: 1;
+}
+
+.photo-view-modal__vector-left {
+    border: solid rgb(208, 208, 208);
+    display: inline-block;
+    border-width: 0 5px 5px 0;
+    opacity: 0;
+    padding: 8px;
+    transform: rotate(135deg);
+    box-shadow: 0px 0px 8px 8px 0 0 rgba(0, 0, 0, .5);
+    transition: all 0.2s ease-in-out; 
+}
+
+.photo-view-modal__vector-right {
+    border: solid rgb(208, 208, 208);
+    border-width: 0 5px 5px 0;
+    opacity: 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(-45deg);
+    box-shadow: 0px 0px 0 0 8px 8px rgba(0, 0, 0, .5);
+    transition: all 0.2s ease-in-out; 
+}
+
+.photo-view-modal__next-btn:hover > .photo-view-modal__vector-right {
+    opacity: 1;
+}
+
+.photo-view-modal__spinner {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+@media (max-width: 750px) {
+    .photo-view-modal {
+        min-width: 0;
+        width: 100%;
+    }
+    .photo-view-modal__img {
+        width: 100%;
+        height: auto;
+    }
+    .photo-view-modal__vector-right, .photo-view-modal__vector-left {
+        opacity: 1;
+    }
+}
